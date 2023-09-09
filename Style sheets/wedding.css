@@ -1,0 +1,162 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(./pexels-anastasia-shuraeva-4765114.jpg);
+    background-position: bottom;
+}
+
+.header {
+    background: url(./pexels-tae-fuller-1616113.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: rgb(255, 254, 254);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: sticky;
+    height: 22rem;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    font-size: 20px;
+    justify-content: left;
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: transparent;
+    position: sticky;
+    background-color: #000000;
+    opacity: 70%;
+    height: 6vh;
+    width: 100%;
+}
+  
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-left: 3rem;
+    list-style: none;
+    overflow:hidden;
+    transition: all 0.2s ease-out;
+    width: 80%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium',sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);  
+    transition: all 0.2s ease-out;
+    font-size: clamp(10px,1.5vw,40px);
+}
+  
+.nav-links a:hover {
+    background-color:rgb(79, 79, 79);
+}
+
+.hero {
+    color: white;
+    padding: 5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    width: 100%;
+}
+
+.button {
+    display: inline-block;
+    background-color: #220657;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    height: 15px;
+    width: 70px;
+    padding: .5rem 1.5rem;
+    align-content: center;
+    text-decoration:solid;
+}
+
+.description {
+    color: #010c26;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    padding: 2rem;
+}
+
+.features {
+    padding: 3rem;
+    text-align: center;
+    font-family: roboto;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.features h1 {
+    color:#220657;
+    font-size: 40px;
+}
+
+.features img {
+    width: 550px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+.footer {
+    background-color: gray;
+    color: #fff;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+
+@media(max-width:1000px){
+    .header{
+        justify-content: center;
+        height: 30%;
+    }
+    .logo{
+        justify-content: left;
+        font-size: 20px;
+        width: 10%;
+    }
+    .navbar{
+        height: 20%;
+        background-color: #010c26;
+    }
+    .nav-links{
+        flex-direction: column;
+        text-align: right;
+        padding: 10px;
+    }
+    .nav-links a {
+        font-size: 15px;
+    }
+    .features img {
+        justify-content: center;
+        width: 300px;
+        height: 200px;
+    }
+}
